@@ -1,7 +1,7 @@
 {
-  "name": "@ezrakurniadi/medistra-tokens",
-  "version": "0.1.0",
-  "description": "Token desain bersama Medistra/MIRA: CSS variables, preset Tailwind v3/v4 (termasuk variabel shadcn), dan tema Mantine.",
+  "name": "@ezrakurniadi/mira-tokens",
+  "version": "0.2.0",
+  "description": "Token desain bersama MIRA: CSS variables, preset Tailwind v3/v4 (termasuk variabel shadcn), dan tema Mantine.",
   "private": true,
   "type": "module",
   "license": "UNLICENSED",

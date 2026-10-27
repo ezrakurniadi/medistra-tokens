@@ -1,4 +1,4 @@
-# DESIGN.md: Token desain Medistra/MIRA
+# DESIGN.md: Token desain MIRA
 
 Standar fleet (keputusan Ezra, 2026-10-27): **yang dibakukan hanya token desain** (warna, font, radius, bayangan, spasi). Library UI bebas per proyek: shadcn/Tailwind, Mantine, atau CSS polos. Proyek menyelaraskan token secara bertahap saat UI-nya disentuh; tidak ada migrasi atau rewrite massal.
 
@@ -8,8 +8,8 @@ Sumber tunggal: `tokens.json`. Palet berasal dari `mira/frontend/src/theme.ts` (
 
 1. **Jangan hardcode warna.** Tidak boleh ada `#00730D`, `#b91c1c`, `rgb(...)` dan sejenisnya di komponen. Pakai:
    - CSS: `var(--primary)`, `var(--color-kritis)`, `var(--color-slate-700)`
-   - Tailwind: `bg-primary`, `text-kritis`, `border-input`, `text-medistra-700`
-   - Mantine: `color="medistra"`, `theme.other.status.kritis.fg`, `var(--mantine-color-medistra-7)`
+   - Tailwind: `bg-primary`, `text-kritis`, `border-input`, `text-mira-700`
+   - Mantine: `color="mira"`, `theme.other.status.kritis.fg`, `var(--mantine-color-mira-7)`
    
    Pengecualian: kanvas/gambar yang memang harus hitam-putih (mis. tanda tangan), dengan komentar alasannya.
 2. **Utamakan token semantik** (`--primary`, `--foreground`, `--muted-foreground`, `--border`) daripada skala mentah (`--color-slate-600`). Token semantik sudah punya varian mode gelap.
@@ -40,8 +40,8 @@ Shade yang **tidak boleh** jadi warna teks di atas putih:
 
 | Warna | Rasio vs `#ffffff` |
 |---|---|
-| medistra-400 `#4ade80` | 1,74 |
-| medistra-500 `#22c55e` | 2,28 |
-| medistra-600 `#16a34a` | 3,30 (hanya teks besar) |
+| mira-400 `#4ade80` | 1,74 |
+| mira-500 `#22c55e` | 2,28 |
+| mira-600 `#16a34a` | 3,30 (hanya teks besar) |
 | slate-400 `#94a3b8` | 2,56 |
 | slate-500 `#64748b` | 4,76 (lolos, batas bawah untuk teks sekunder) |

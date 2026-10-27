@@ -1,6 +1,6 @@
 declare const tokens: {
   "color": {
-    "medistra": {
+    "mira": {
       "50": string;
       "100": string;
       "200": string;
