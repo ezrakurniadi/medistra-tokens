@@ -1,0 +1,24 @@
+{
+  "name": "@ezrakurniadi/medistra-tokens",
+  "version": "0.1.0",
+  "description": "Token desain bersama Medistra/MIRA: CSS variables, preset Tailwind v3/v4 (termasuk variabel shadcn), dan tema Mantine.",
+  "private": true,
+  "type": "module",
+  "license": "UNLICENSED",
+  "files": ["dist", "tokens.json", "DESIGN.md"],
+  "exports": {
+    ".": { "types": "./dist/tokens.d.ts", "default": "./dist/tokens.js" },
+    "./tokens.css": "./dist/tokens.css",
+    "./tailwind-v4.css": "./dist/tailwind-v4.css",
+    "./tailwind-preset": "./dist/tailwind-preset.cjs",
+    "./mantine": { "types": "./dist/mantine.d.ts", "default": "./dist/mantine.js" },
+    "./tokens.json": "./tokens.json",
+    "./dist/*": "./dist/*"
+  },
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "contrast": "node scripts/contrast.mjs",
+    "test": "node scripts/contrast.mjs && node scripts/build.mjs --check"
+  },
+  "engines": { "node": ">=18" }
+}
