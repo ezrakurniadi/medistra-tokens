@@ -14,13 +14,13 @@ Aturan pakai dan syarat kontras ada di [DESIGN.md](DESIGN.md).
 
 ## Pasang
 
-Repo privat, tanpa registry. Pasang sebagai dependensi git dengan tag versi (mesin harus punya akses `gh`/SSH ke GitHub):
+Repo publik (sejak 2026-10-27, keputusan Ezra di EZR-123), tanpa registry. Pasang sebagai dependensi git dengan tag versi; tidak perlu kredensial, termasuk di CI tanpa secret:
 
 ```bash
 npm i github:ezrakurniadi/medistra-tokens#v0.1.0
 ```
 
-`dist/` ikut di-commit, jadi tidak ada langkah build saat instalasi. Kalau mesin/CI tidak punya akses ke repo privat, salin `dist/` ke proyek (vendoring) dan catat versinya.
+`dist/` ikut di-commit, jadi tidak ada langkah build saat instalasi. Jangan menyalin `dist/` ke proyek (vendoring); salinan bisa menyimpang diam-diam dari sumbernya.
 
 ## Pakai
 
