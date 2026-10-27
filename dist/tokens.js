@@ -1,7 +1,7 @@
 /* DIBANGKITKAN dari tokens.json oleh scripts/build.mjs, jangan diedit manual. */
 export const tokens = {
   "color": {
-    "medistra": {
+    "mira": {
       "50": "#f0fdf4",
       "100": "#dcfce7",
       "200": "#bbf7d0",

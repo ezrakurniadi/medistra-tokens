@@ -1,10 +1,10 @@
 /* DIBANGKITKAN dari tokens.json oleh scripts/build.mjs, jangan diedit manual. */
 // Objek polos untuk createTheme() Mantine v7+; paket ini tidak bergantung pada @mantine/core.
 //   import { createTheme } from '@mantine/core';
-//   import { mantineTheme } from '@ezrakurniadi/medistra-tokens/mantine';
+//   import { mantineTheme } from '@ezrakurniadi/mira-tokens/mantine';
 //   export const theme = createTheme({ ...mantineTheme, components: { ... } });
 export const mantineTheme = {
-  "primaryColor": "medistra",
+  "primaryColor": "mira",
   "primaryShade": 7,
   "autoContrast": true,
   "fontFamily": "Inter, system-ui, -apple-system, \"Segoe UI\", Roboto, sans-serif",
@@ -14,7 +14,7 @@ export const mantineTheme = {
     "fontWeight": "700"
   },
   "colors": {
-    "medistra": [
+    "mira": [
       "#f0fdf4",
       "#dcfce7",
       "#bbf7d0",

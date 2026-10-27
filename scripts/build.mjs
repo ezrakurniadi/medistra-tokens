@@ -17,7 +17,7 @@ const decl = (entries, indent = "  ") => entries.map(([k, v]) => `${indent}${k}:
 // ---- Variabel dasar (dipakai tokens.css dan @theme v4; nama mengikuti konvensi Tailwind v4) ----
 function baseVars() {
   const out = [];
-  for (const pal of ["medistra", "slate"])
+  for (const pal of ["mira", "slate"])
     for (const [shade, hex] of Object.entries(t.color[pal])) out.push([`--color-${pal}-${shade}`, hex]);
   for (const s of STATUS) {
     const c = t.color.status[s];
@@ -63,7 +63,7 @@ const tokensCss =
 const SEM_KEYS = Object.keys(light);
 const tailwindV4 =
   HEADER +
-  `/* Pakai: @import "tailwindcss"; @import "@ezrakurniadi/medistra-tokens/tailwind-v4.css"; */\n` +
+  `/* Pakai: @import "tailwindcss"; @import "@ezrakurniadi/mira-tokens/tailwind-v4.css"; */\n` +
   `@theme {\n${decl(baseVars())}\n}\n\n` +
   `/* Spasi tidak dimasukkan ke @theme: --spacing-md akan menimpa max-w-md dkk. */\n` +
   `:root {\n${decl(SPACING)}\n}\n\n` +
@@ -93,7 +93,7 @@ const preset = {
   darkMode: ["class"],
   theme: {
     extend: {
-      colors: { medistra: t.color.medistra, slate: t.color.slate, ...statusColors, ...semColors },
+      colors: { mira: t.color.mira, slate: t.color.slate, ...statusColors, ...semColors },
       fontFamily: { sans: splitFont(t.font.sans), heading: splitFont(t.font.heading), mono: splitFont(t.font.mono) },
       borderRadius: { ...Object.fromEntries(Object.entries(t.radius).filter(([k]) => k !== "default")), DEFAULT: "var(--radius)" },
       boxShadow: t.shadow,
@@ -109,14 +109,14 @@ const tailwindPreset =
 const shades = (pal) => Object.values(t.color[pal]);
 const pxToRem = (v) => `${parseFloat(v) / 16}rem`;
 const mantine = {
-  primaryColor: "medistra",
+  primaryColor: "mira",
   primaryShade: 7,
   autoContrast: true,
   fontFamily: t.font.sans,
   fontFamilyMonospace: t.font.mono,
   headings: { fontFamily: t.font.heading, fontWeight: t.font["weight-heading"] },
   colors: {
-    medistra: shades("medistra"),
+    mira: shades("mira"),
     slate: shades("slate"),
     // Skala "dark" Mantine: [0] teks terang ... [7] latar body; disusun dari slate.
     dark: [
@@ -137,7 +137,7 @@ const mantineJs =
   HEADER +
   "// Objek polos untuk createTheme() Mantine v7+; paket ini tidak bergantung pada @mantine/core.\n" +
   "//   import { createTheme } from '@mantine/core';\n" +
-  "//   import { mantineTheme } from '@ezrakurniadi/medistra-tokens/mantine';\n" +
+  "//   import { mantineTheme } from '@ezrakurniadi/mira-tokens/mantine';\n" +
   "//   export const theme = createTheme({ ...mantineTheme, components: { ... } });\n" +
   `export const mantineTheme = ${JSON.stringify(mantine, null, 2)};\n`;
 const mantineDts =

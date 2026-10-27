@@ -1,16 +1,16 @@
 /* DIBANGKITKAN dari tokens.json oleh scripts/build.mjs, jangan diedit manual. */
-/* Pakai: @import "tailwindcss"; @import "@ezrakurniadi/medistra-tokens/tailwind-v4.css"; */
+/* Pakai: @import "tailwindcss"; @import "@ezrakurniadi/mira-tokens/tailwind-v4.css"; */
 @theme {
-  --color-medistra-50: #f0fdf4;
-  --color-medistra-100: #dcfce7;
-  --color-medistra-200: #bbf7d0;
-  --color-medistra-300: #86efac;
-  --color-medistra-400: #4ade80;
-  --color-medistra-500: #22c55e;
-  --color-medistra-600: #16a34a;
-  --color-medistra-700: #00730D;
-  --color-medistra-800: #005009;
-  --color-medistra-900: #012e11;
+  --color-mira-50: #f0fdf4;
+  --color-mira-100: #dcfce7;
+  --color-mira-200: #bbf7d0;
+  --color-mira-300: #86efac;
+  --color-mira-400: #4ade80;
+  --color-mira-500: #22c55e;
+  --color-mira-600: #16a34a;
+  --color-mira-700: #00730D;
+  --color-mira-800: #005009;
+  --color-mira-900: #012e11;
   --color-slate-50: #f8fafc;
   --color-slate-100: #f1f5f9;
   --color-slate-200: #e2e8f0;
